@@ -1,6 +1,6 @@
 {
-  "name": "vue-moment",
-  "version": "1.0.0",
+  "name": "vue3-jalali-moment",
+  "version": "1.0.1",
   "description": "jalali(khorshidi, shamsi, شمسی, خورشیدی, جلالی) filters for your Vue.js project",
   "main": "vue-moment.js",
   "scripts": {
@@ -11,13 +11,15 @@
     "url": "git+https://github.com/fingerpich/vue-jalali-moment.git"
   },
   "keywords": [
+    "vue3",
     "vue",
     "custom",
     "date",
     "time",
     "filter",
     "moment",
-    "moment.js"
+    "moment.js",
+    "persian"
   ],
   "author": "Mojtaba Zarei(Fingerpich)",
   "license": "ISC",
@@ -29,7 +31,7 @@
     "jalali-moment": "^3.0.8"
   },
   "peerDependencies": {
-    "vue": ">=1.x.x"
+    "vue": ">=3.x.x"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
