@@ -8,13 +8,13 @@
 Install via NPM...
 
 ```sh
-$ npm install vue-jalali-moment
+$ npm install vue3-jalali-moment
 ```
 
 ...and require the plugin like so:
 
 ```js
-Vue.use(require('vue-jalali-moment'));
+Vue.use(require('vue3-jalali-moment'));
 ```
 
 ## Usage

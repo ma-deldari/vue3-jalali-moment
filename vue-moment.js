@@ -2,9 +2,9 @@ var moment = require('jalali-moment');
 
 module.exports = {
 	install: function (Vue, options) {
-		Object.defineProperties(Vue.prototype, {
+		Object.defineProperties(Vue.provide, {
 			$moment: {
-				get: function() {
+				get: function () {
 					return moment;
 				},
 			},
@@ -16,7 +16,7 @@ module.exports = {
 
 		Vue.moment = moment;
 
-		Vue.filter('moment', function() {
+		Vue.filter('moment', function () {
 			var args = Array.prototype.slice.call(arguments),
 				input = args.shift(),
 				date;
@@ -51,8 +51,8 @@ module.exports = {
 						// http://momentjs.com/docs/#/manipulating/add/
 
 						var addends = args.shift()
-										  .split(',')
-										  .map(Function.prototype.call, String.prototype.trim);
+							.split(',')
+							.map(Function.prototype.call, String.prototype.trim);
 						var obj = {};
 						for (var n = 0; n < addends.length; n++) {
 							var addend = addends[n].split(' ');
@@ -67,8 +67,8 @@ module.exports = {
 						// http://momentjs.com/docs/#/manipulating/subtract/
 
 						var subtrahends = args.shift()
-										  .split(',')
-										  .map(Function.prototype.call, String.prototype.trim);
+							.split(',')
+							.map(Function.prototype.call, String.prototype.trim);
 						obj = {};
 						for (var n = 0; n < subtrahends.length; n++) {
 							var subtrahend = subtrahends[n].split(' ');
@@ -103,7 +103,7 @@ module.exports = {
 
 						date = date.fromNow(removeSuffix);
 						break;
-						
+
 					case 'diff':
 
 						// Mutates the original moment by doing a difference with another date.
