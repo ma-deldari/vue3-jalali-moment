@@ -1,6 +1,6 @@
 {
   "name": "vue3-jalali-moment",
-  "version": "1.0.1",
+  "version": "3.0.1",
   "description": "jalali(khorshidi, shamsi, شمسی, خورشیدی, جلالی) filters for your Vue.js project",
   "main": "vue-moment.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fingerpich/vue-jalali-moment.git"
+    "url": "git+https://github.com/ma-deldari/vue3-jalali-moment.git"
   },
   "keywords": [
     "vue3",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/fingerpich/vue-jalali-moment/issues"
   },
-  "homepage": "https://github.com/fingerpich/vue-jalali-moment#readme",
+  "homepage": "https://github.com/ma-deldari/vue3-jalali-moment#readme",
   "dependencies": {
     "jalali-moment": "^3.0.8"
   },
